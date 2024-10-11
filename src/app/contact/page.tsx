@@ -1,4 +1,4 @@
-import React from 'react'
+
 
 const Contact = () => {
   return (
@@ -19,7 +19,7 @@ const Contact = () => {
               <textarea name="" id="message" rows={5} className='w-full shadow-lg rounded-lg border-2 border-black p-3 focus:outline-none focus:border-black  ' placeholder='Write Your Message'></textarea>
             </div>
             <div className='flex justify-center'>
-              <button type="submit" className='bg-black text-white font-semibold p-3 shadow-lg rounded-md   hover:border-2 hover:border-black hover:bg-white hover:text-black'>Submit</button>
+              <button type="submit" className='bg-black text-white font-semibold p-3 shadow-lg rounded-md   hover:border-2 hover:border-black hover:bg-[#f7f9f4] hover:text-black'>Submit</button>
             </div>
         </form>
       

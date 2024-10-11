@@ -1,7 +1,7 @@
-import Image from "next/image";
-import Header from "@/components/header";
+
+
 import BlogCards from "@/components/blogcards";
-import Footer from "@/components/footer";
+
 export default function Home() {
   const blogs = [
     {
