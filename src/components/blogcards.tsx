@@ -16,7 +16,7 @@ const BlogCards = ({ title, description, slug, blogImage }:BlogCardProps) => {
         <h2 className="text-xl font-bold text-black">{title}</h2>
         <p className="mt-2 ">{description}</p>
         <Link href={`/blog/${slug}`}>
-          <button className=" cards  border-2 border-white bg-[#bbce4e] text-white shadow-lg rounded-lg p-2 hover:bg-white hover:text-[#282728] hover:border-[#282728] mt-4">Read More</button>
+          <button className=" cards  border-2 border-[#24272A] bg-[#bbce4e] text-blck shadow-lg rounded-lg p-2 hover:bg-white hover:text-[#282728] hover:border-[#282728] mt-4">Read More</button>
         </Link>
       </div>
     </div>

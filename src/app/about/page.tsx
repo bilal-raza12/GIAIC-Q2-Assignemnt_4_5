@@ -2,7 +2,7 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className="min-h-screen mx-auto bg-gradient-to-r from-[#e9f0c1]   via-[#cbd66d] to-[#adbe15] px-2 py-4">
+    <div className="min-h-screen mx-auto bg-gradient-to-r from-[#f2f6de]  via-[#bec29f] to-[#adbe15] px-2 py-4">
       <div className="scale-up-center ">
         <h1 className="mx-auto text-3xl font-bold text-center mb-2">
           About Us

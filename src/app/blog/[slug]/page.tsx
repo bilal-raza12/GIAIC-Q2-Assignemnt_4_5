@@ -220,7 +220,7 @@ interface BlogProps {
 const BlogsPage = ({ params }: BlogProps) => {
   const blog = blogdata[params.slug];
   return (
-    <div className="blog-pages bg-gray-300 h-full px-4 py-8 bg-gradient-to-r from-[#e9f0c1]  via-[#cbd66d] to-[#adbe15]  slide-fwd-center">
+    <div className="blog-pages bg-gray-300 h-full px-4 py-8 bg-gradient-to-r from-[#f2f6de]  via-[#bec29f] to-[#adbe15]  slide-fwd-center">
      
         <img
           src={blog.blogImage}

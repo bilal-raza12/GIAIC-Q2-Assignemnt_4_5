@@ -2,7 +2,7 @@ import React from 'react'
 
 const Contact = () => {
   return (
-    <div className='min-h-screen bg-gradient-to-r from-[#e9f0c1]  via-[#cbd66d] to-[#adbe15] px-2 py-8  '>
+    <div className='min-h-screen bg-gradient-to-r from-[#f2f6de]  via-[#bec29f] to-[#adbe15] px-2 py-8  '>
     
         <h1 className='font-bold text-3xl text-center'>Contact Us</h1>
         <form action="" className='space-y-4'>

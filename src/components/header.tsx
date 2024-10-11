@@ -10,25 +10,25 @@ const Header = () => {
   };
   return (
     <header>
-      <nav className="fixed top-0  bg-gradient-to-r from-[#e9f0c1]  via-[#cbd66d] to-[#adbe15] w-full z-50 h-[80px] backdrop-blur-3xl border-b-2 border-[#838954]">
-        <div className="flex justify-between text-black items-center py-5">
-          <div className="text-3xl hover:cursor-pointer transform transition-transform duration-300 hover:scale-105 ml-2 border-t-2 border-black border-b-2 border-black ">
-            Blog<span className="text-[#717a5e]">Insights</span>
+      <nav className="fixed top-0 bg-[#24272A] text-white w-full z-50 h-[80px] backdrop-blur-3xl border-b-2 border-[#838954]">
+        <div className="flex justify-between text-whitw items-center py-5">
+          <div className="text-3xl hover:cursor-pointer transform transition-transform duration-300 hover:scale-105 ml-2 border-t-2 border-white border-b-2 border-white ">
+            Blog<span className="text-[#a0c256]">Insights</span>
           </div>
           <div className="hidden md:block ">
             <ul className="flex justify-between gap-4  ">
               <Link href={"/"}>
-              <li className="px-4 hover:cursor-pointer hover:text-white">
+              <li className="px-4 hover:cursor-pointer hover:text-yellow-200">
                 Home
               </li>
               </Link>
               <Link href={"/about"}>
-              <li className="px-4 hover:cursor-pointer  hover:text-white">
+              <li className="px-4 hover:cursor-pointer  hover:text-yellow-200">
                 About
               </li>
               </Link>
               <Link href={"/contact"}>
-              <li className="px-4 hover:cursor-pointer   hover:text-white">
+              <li className="px-4 hover:cursor-pointer   hover:text-yellow-200">
                 Contact
               </li>
               </Link>

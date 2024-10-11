@@ -43,7 +43,7 @@ export default function Home() {
   ]
   return (
    
-   <div className=" container  w-full min-h-screen  mx-auto p-8 bg-gradient-to-r from-[#e9f0c1]  via-[#cbd66d] to-[#adbe15]">
+   <div className=" container  w-full min-h-screen  mx-auto p-8 bg-gradient-to-r from-[#f2f6de]  via-[#bec29f] to-[#adbe15]">
    
 
     <h1 className="text-4xl fonet-bold mb-6 text-center ">
