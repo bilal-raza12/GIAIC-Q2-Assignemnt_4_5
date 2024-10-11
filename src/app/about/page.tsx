@@ -18,8 +18,8 @@ const About = () => {
           high-quality content that inspires, educates, and sparks meaningful
           conversations. At Blog Insights, we are a community of passionate
           writers, creators, and thinkers who believe in the value of
-          well-crafted ideas and stories. Whether you're here to learn something
-          new, find inspiration, or stay updated on the latest trends, we're
+          well-crafted ideas and stories. Whether you&apos;re here to learn something
+          new, find inspiration, or stay updated on the latest trends, we&apos;re
           committed to delivering content that adds value to your life. Thank
           you for being part of our journey. Stay curious, stay informed!
         </p>
