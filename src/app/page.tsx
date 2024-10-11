@@ -42,16 +42,20 @@ export default function Home() {
     }
   ]
   return (
-   <div className=" container w-full min-h-screen  mx-auto p-8 bg-gradient-to-r from-[#e9f0c1]  via-[#cbd66d] to-[#adbe15]">
+   
+   <div className=" container  w-full min-h-screen  mx-auto p-8 bg-gradient-to-r from-[#e9f0c1]  via-[#cbd66d] to-[#adbe15]">
+   
+
     <h1 className="text-4xl fonet-bold mb-6 text-center ">
       Latest Blogs
     </h1>
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 scale-up-center">
       {blogs.map((blog) => (
-
-      <BlogCards  key={blog.slug} title={blog.title} description={blog.description} blogImage={blog.blogImage} slug={blog.slug}/>
+        
+        <BlogCards  key={blog.slug} title={blog.title} description={blog.description} blogImage={blog.blogImage} slug={blog.slug}/>
       ))};
     </div>
+      
     
      
    </div>
