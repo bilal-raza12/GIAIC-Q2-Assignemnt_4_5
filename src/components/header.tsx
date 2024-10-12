@@ -94,7 +94,7 @@ const Header = () => {
             )}
           </div>
           {isOpen && (
-            <ul className="flex flex-col md:flex-row absolute md:static top-[100%] items-center md:justify-end text-black w-full bg-gradient-to-r from-[#e9f0c1]  via-[#cbd66d] to-[#adbe15]">
+            <ul className="flex flex-col md:flex-row absolute md:static top-[100%] items-center md:justify-end text-black w-full bg-[#24272A]">
               <li className="m-4 hover:cursor-pointer active:underline">
                 <Link href="/">Home</Link>
               </li>
