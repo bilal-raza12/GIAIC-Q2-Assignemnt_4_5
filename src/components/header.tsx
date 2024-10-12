@@ -13,7 +13,7 @@ const Header = () => {
       <nav className="fixed top-0 bg-[#24272A] text-white w-full z-50 h-[80px] backdrop-blur-3xl border-b-2 border-[#838954]">
         <div className="flex justify-between text-whitw items-center py-5">
           <div className="text-3xl hover:cursor-pointer transform transition-transform duration-300 hover:scale-105 ml-2 border-t-2 border-white border-b-2 border-white ">
-            Blog<span className="text-[#a0c256]">Insights</span>
+            Blog<span className="text-[#dff83c]">Insights</span>
           </div>
           <div className="hidden md:block ">
             <ul className="flex justify-between gap-4  ">
@@ -94,15 +94,15 @@ const Header = () => {
             )}
           </div>
           {isOpen && (
-            <ul className="flex flex-col md:flex-row absolute md:static top-[100%] items-center md:justify-end text-white hover:text-yellow-300 w-full bg-[#24272A]">
-              <li className="m-4 hover:cursor-pointer active:underline">
+            <ul className="flex flex-col md:flex-row absolute md:static top-[100%] items-center md:justify-end text-white w-full bg-[#24272A]">
+              <li className="m-4 hover:cursor-pointer active:underline  hover:text-yellow-200">
                 <Link href="/">Home</Link>
               </li>
-              <li className="m-4 hover:cursor-pointer active:underline ">
+              <li className="m-4 hover:cursor-pointer active:underline  hover:text-yellow-200">
                 <Link href="/about">About</Link>
               </li>
               <Link href="/contact">
-                <li className="m-4 hover:cursor-pointer active:underline ">
+                <li className="m-4 hover:cursor-pointer active:underline  hover:text-yellow-200">
                   Contact
                 </li>
               </Link>
