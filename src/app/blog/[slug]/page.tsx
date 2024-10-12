@@ -1,4 +1,12 @@
-const blogdata = [
+
+type Blog = {
+  slug:string,
+  title:string,
+  content:string,
+  blogImage: string,
+  
+}
+const blogpage : Blog[] = [
   {
     slug:"apple-innovation-strategy",
     title: "How Apple Drives Innovation in Technology",
@@ -224,18 +232,18 @@ interface BlogProps {
 }
 
 const BlogsPage = ({ params }: BlogProps) => {
-  const blog = blogdata.find(b => b.slug === params.slug);
+  const blog = blogpage.find(b => b.slug === params.slug);
   return (
     <div className="blog-pages bg-gray-300 h-full px-4 py-8 bg-gradient-to-r from-[#f2f6de]  via-[#bec29f] to-[#adbe15]  slide-fwd-center">
      
         <img
-          src={blog.blogImage}
-          alt={blog.title}
+          src={blog?.blogImage}
+          alt={blog?.title}
           className="w-[100%] rounded-lg h-96 mx-auto "
         />
-        <h2 className="font-bold text-2xl py-4">{blog.title}</h2>
+        <h2 className="font-bold text-2xl py-4">{blog?.title}</h2>
         <p className="py-2 slide-fwd-center">
-          {blog.content}
+          {blog?.content}
         </p>
       </div>
   
