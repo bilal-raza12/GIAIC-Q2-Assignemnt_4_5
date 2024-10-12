@@ -1,5 +1,6 @@
-const blogdata = {
-  "apple-innovation-strategy": {
+const blogdata = [
+  {
+    slug:"apple-innovation-strategy",
     title: "How Apple Drives Innovation in Technology",
     blogImage: "/images/blog1.png",
     content: `Apple Inc. is renowned for its ability to innovate and set trends in
@@ -29,7 +30,8 @@ const blogdata = {
           years to come.`,
   },
 
-  "tailwind-css-tips": {
+  {
+    slug:"tailwind-css-tips",
     title: "Tailwind Css: Tips and tricks to style your apps",
     blogImage: "/images/blog2.jpeg",
     content:`Tailwind CSS is a utility-first CSS framework that has gained immense popularity for its flexibility and ease of use. Unlike traditional CSS frameworks, which provide predefined components, Tailwind allows you to build custom designs directly in your markup. This blog will explore some essential tips and tricks to help you style your applications effectively using Tailwind CSS.
@@ -128,7 +130,8 @@ Conclusion
 
 Tailwind CSS is a powerful tool that can significantly improve your styling workflow. By utilizing utility classes, customizing your configuration, and leveraging responsive design techniques, you can create beautiful and functional applications quickly. Incorporate these tips and tricks into your development process to harness the full potential of Tailwind CSS and take your app's styling to the next level.`,
   },
-  "google-ai-revolution": {
+  {
+    slug:"google-ai-revolution",
     title: "Google and the AI Revolution: Transforming Industries",
     blogImage: "/images/blog3.jpeg",
     content: `Google's rise in artificial intelligence (AI) has reshaped various sectors, from healthcare to finance, positioning it at the forefront of this technological revolution. As a leading tech giant, Google has invested heavily in AI research and development, leveraging its capabilities to transform industries and improve the way we live and work.
@@ -145,9 +148,10 @@ As businesses generate vast amounts of data, Google’s AI tools enable companie
 
 As AI technology continues to evolve, Google is actively exploring new applications in automation and robotics. Projects like Google’s Waymo aim to revolutionize transportation through self-driving technology, potentially reducing traffic accidents and transforming urban mobility. Additionally, AI-powered automation can streamline various industries, from manufacturing to logistics, increasing productivity and reducing costs. As these technologies advance, they will play a crucial role in shaping the future of work and industry.
 
-Google’s contributions to the AI revolution have far-reaching implications for various industries. By leveraging AI technologies, Google enhances search capabilities, transforms healthcare, improves productivity, revolutionizes customer service, and enables smarter data analysis. As we move forward, the continued integration of AI into everyday life will further reshape industries and redefine the way we work and live. The AI revolution is not just a technological shift; it is a fundamental transformation of our society, and Google is leading the charge.`,
+Googles contributions to the AI revolution have far-reaching implications for various industries. By leveraging AI technologies, Google enhances search capabilities, transforms healthcare, improves productivity, revolutionizes customer service, and enables smarter data analysis. As we move forward, the continued integration of AI into everyday life will further reshape industries and redefine the way we work and live. The AI revolution is not just a technological shift; it is a fundamental transformation of our society, and Google is leading the charge.`,
   },
-  "facebook-data-privacy": {
+  {
+    slug:"facebook-data-privacy",
     title: "Data Privacy Challenges at Facebook",
     blogImage: "/images/blog4.jpeg",
     content: `Facebook has faced significant data privacy challenges over the years, raising concerns about user trust and the security of personal information. As one of the largest social media platforms in the world, Facebook collects vast amounts of data from its users, including demographic details, interests, and online behavior. This data is invaluable for targeted advertising but poses substantial privacy risks.
@@ -166,7 +170,8 @@ As technology continues to evolve, Facebook will need to address emerging data p
 
 In conclusion, Facebook's data privacy challenges underscore the complexities of managing personal information in the digital age. The Cambridge Analytica scandal, regulatory pressures, user consent, and the need for transparency all contribute to the ongoing debate surrounding data privacy. As users become increasingly aware of their rights and demand greater accountability from social media platforms, Facebook must continue to evolve its practices to build and maintain trust. The future of Facebook's data privacy policies will play a critical role in shaping the platform's reputation and its relationship with users in an increasingly data-driven world.`,
   },
-  "nextjs-beginners": {
+{
+  slug:  "nextjs-beginners",
     title: "Mastering Next.js: A Begginer's Journey",
     blogImage: "/images/blog5.jpeg",
     content: `Embarking on the journey to master Next.js is an exciting adventure for any web developer. Next.js, a React framework, provides a powerful way to build server-rendered applications and static websites. This journey often starts with understanding the fundamentals of React, as Next.js builds upon this popular library, allowing developers to create dynamic and interactive user interfaces seamlessly.
@@ -189,7 +194,8 @@ As you progress, engaging with the vibrant Next.js community is invaluable. Join
 
 In conclusion, mastering Next.js is a rewarding experience that empowers developers to create fast, efficient, and dynamic web applications. By setting up a development environment, understanding the framework's core concepts, and continuously learning and experimenting, beginners can become proficient in Next.js. Embracing this journey not only enhances your web development skills but also opens up exciting opportunities in the ever-evolving tech landscape.`,
   },
-  "amazon-ecommerce-strategies": {
+ {
+  slug: "amazon-ecommerce-strategies",
     title: "Amazon's E-commerce Strategies: Lessons for Startups",
     blogImage: "/images/blog6.webp",
     content: `Amazon has become a powerhouse in the e-commerce industry, revolutionizing how people shop online. Startups looking to make their mark in the competitive e-commerce landscape can learn valuable lessons from Amazon's success. One of the key strategies is customer obsession. Amazon places immense emphasis on understanding customer needs and preferences, often going above and beyond to provide exceptional service. Startups should prioritize customer feedback and continuously adapt their offerings based on consumer insights.
@@ -211,14 +217,14 @@ Lastly, understanding the competition is vital. Amazon continually monitors its 
 In summary, startups can glean invaluable insights from Amazon's e-commerce strategies. By prioritizing customer satisfaction, leveraging data, building a strong brand, optimizing logistics, encouraging customer loyalty, embracing innovation, ensuring scalability, and understanding the competition, startups can navigate the e-commerce landscape effectively. Learning from Amazon's successes and challenges can help startups carve their own paths and achieve sustainable growth in the competitive online marketplace.
 `,
   },
-};
+];
 
 interface BlogProps {
   params: { slug: string };
 }
 
 const BlogsPage = ({ params }: BlogProps) => {
-  const blog = blogdata[params.slug];
+  const blog = blogdata.find(b => b.slug === params.slug);
   return (
     <div className="blog-pages bg-gray-300 h-full px-4 py-8 bg-gradient-to-r from-[#f2f6de]  via-[#bec29f] to-[#adbe15]  slide-fwd-center">
      
